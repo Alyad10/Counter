@@ -19,7 +19,7 @@ import android.widget.TextView;
 public class CounterFragment extends Fragment {
     private ImageView image_view;
     private TextView textView, cicleCount;
-    private Button btn_plus;
+    private ImageView btn_plus;
     private TextView zero;
     private Animation mFadeInAnimation, mFadeOutAnimation;
     int count = 0;
@@ -36,7 +36,6 @@ public class CounterFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        textView =view.findViewById(R.id.textView);
         btn_plus = view.findViewById(R.id.btn_plus);
         zero = view.findViewById(R.id.zero);
         cicleCount = view.findViewById(R.id.cikle_count);
